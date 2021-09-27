@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>web-exception-handling-spring-boot-autoconfigure</artifactId>
+
+    <parent>
+        <artifactId>web-exception-handling-spring-boot-custom-starter</artifactId>
+        <groupId>br.com.simaoramos</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>br.com.simaoramos</groupId>
+            <artifactId>web-exception-handling-library</artifactId>
+            <version>${project.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>br.com.simaoramos</groupId>
+            <artifactId>exception-core</artifactId>
+            <version>${exception-core.version}</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>
